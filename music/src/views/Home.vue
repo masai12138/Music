@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Song></Song>
+    <Song class="song"></Song>
   </div>
 </template>
 <script>
@@ -16,4 +16,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+.song{
+  overflow: hidden;
+}
+</style>
 
