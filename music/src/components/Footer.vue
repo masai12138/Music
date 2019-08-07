@@ -3,11 +3,11 @@
         <ul class="footer-ul">
             <li @click="getMusic()">
                 <i class="el-icon-service"></i>
-                音乐排行榜
+                <span>音乐排行榜</span>
             </li>
             <li @click="getMine()">
                 <i class="el-icon-star-off"></i>
-                我的收藏
+                <span>我的收藏</span>
             </li>
         </ul>
     </div>
@@ -22,10 +22,10 @@ export default {
     },
     methods : {
         getMine : function(){
-            // this.$router.push('/about')
+            this.$router.push('/about')
         },
         getMusic : function(){
-            // this.$router.push('/home')
+            this.$router.push('/')
         }
     }
 }
@@ -40,6 +40,9 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.footer-ul li:hover{
+    color: red;
 }
 .footer-ul{
     margin: 0;
