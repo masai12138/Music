@@ -1,15 +1,16 @@
 <template>
     <div class="footer">
         <ul class="footer-ul">
-            <li @click="getMusic()">
-                <i class="el-icon-service"></i>
-                <span>音乐排行榜</span>
+            <li >
+
             </li>
-            <li @click="getMine()">
-                <i class="el-icon-star-off"></i>
-                <span>我的收藏</span>
+            <li >
+
             </li>
         </ul>
+        <div class="button">
+
+        </div>
     </div>
 </template>
 
@@ -21,16 +22,27 @@ export default {
         }
     },
     methods : {
-        getMine : function(){
-            this.$router.push('/about')
-        },
-        getMusic : function(){
-            this.$router.push('/')
-        }
+ 
     }
 }
 </script>
 <style scoped>
+.footer{
+    width: 100%;
+}     
+.footer-ul{
+     width: 40%;
+     height: 64px;
+     background-color: blue;
+     float: left;
+}  
+.button{
+    width: 60%;
+    height: 64px;
+    background-color: red;
+    float: left;
+    margin: 0;
+}
 .footer-ul li{
     width: 50%;
     height: 64px;
